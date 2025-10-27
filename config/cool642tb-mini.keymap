@@ -19,12 +19,12 @@
 
         shift_tab {
             bindings = <&kp LANG2>;
-            key-positions = <12 13>;
+            key-positions = <7 6>;
         };
 
         lang {
             bindings = <&kp LANG1>;
-            key-positions = <18 19>;
+            key-positions = <7 8>;
         };
     };
 
@@ -55,10 +55,10 @@
 
         FUNCTION {
             bindings = <
-&kp LA(GRAVE)  &kp F2    &kp F3    &kp F4   &kp F5                                  &bt BT_SEL 0           &bt BT_SEL 1      &bt BT_SEL 2        &bt BT_SEL 3  &kp DEL
-&kp F6         &kp F7    &kp F8    &kp F9   &kp F10  &kp LCTRL             &kp F13  &kp LEFT               &kp DOWN          &kp UP_ARROW        &kp RIGHT     &kp BACKSPACE
-&kp LC(SPACE)  &trans    &kp F1    &kp F11  &kp F12  &trans                &trans   &kp C_RW               &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp C_MUTE    &kp C_VOLUME_UP
-&kp LC(SPACE)  &kp LWIN  &kp LALT  &trans   &trans   &kp LCTRL             &trans   &trans                                                                     &kp C_VOLUME_DOWN
+&kp LA(GRAVE)  &kp F2    &kp F3    &kp F4   &kp F5                           &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2        &bt BT_SEL 3  &kp DEL
+&kp F6         &kp F7    &kp F8    &kp F9   &kp F10  &kp LCTRL      &kp F13  &kp LEFT      &kp DOWN          &kp UP_ARROW        &kp RIGHT     &kp BACKSPACE
+&kp LC(SPACE)  &trans    &kp F1    &kp F11  &kp F12  &trans         &trans   &kp C_RW      &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp C_MUTE    &kp C_VOLUME_UP
+&kp LC(SPACE)  &kp LWIN  &kp LALT  &trans   &trans   &kp LCTRL      &trans   &trans                                                            &kp C_VOLUME_DOWN
             >;
         };
 
@@ -74,7 +74,7 @@
         ARROW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 5   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mo 6                               &trans
             >;
@@ -98,6 +98,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &mkp MB1      &trans  &trans                              &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
