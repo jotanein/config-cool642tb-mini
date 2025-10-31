@@ -26,6 +26,11 @@
             bindings = <&kp LANG1>;
             key-positions = <7 8>;
         };
+
+        ESCAPEKEY {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     behaviors {
